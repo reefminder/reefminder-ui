@@ -11,7 +11,7 @@ const precss = require('precss');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
-    context: path.join(__dirname, 'frontend', 'src'),
+    context: path.join(__dirname, 'client', 'src'),
     entry: [
         './main.js'
     ],
@@ -48,7 +48,7 @@ const config = {
     postcss: [autoprefixer, precss],
     resolve: {
         root: [
-            path.join(__dirname, 'frontend', 'src')
+            path.join(__dirname, 'client', 'src')
         ],
         extensions: ['', '.js', '.jsx']
     },
