@@ -64,16 +64,6 @@
     "test": "jest"
   },
   "jest": {
-    "testPathPattern": ["/__tests__/"],
-    "testPathIgnorePatterns": [
-      "/node_modules/"
-    ],
-    "testFileExtensions": [".js"],
-    "preprocessorIgnorePatterns": ["/node_modules/"],
-    "unmockedModulePathPatterns": [
-      "<rootDir>/node_modules/react",
-      "<rootDir>/node_modules/react-dom",
-      "<rootDir>/node_modules/react-addons-test-utils"
-    ]
+    "rootDir": "client/src/app"
   }
 }
