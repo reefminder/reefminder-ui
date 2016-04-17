@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-export default class AppContainerPage extends React.Component {
+export default class AppContainer extends React.Component {
     render() {
         return (
             <div className="application-container">
