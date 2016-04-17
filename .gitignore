@@ -1,6 +1,5 @@
-node_modules
-dist
-app/bower_components
-app/bundles
-.idea
-*.log
+.idea/
+build/
+dist/
+node_modules/
+npm-debug.log
