@@ -1,26 +1,30 @@
-// __tests__/itemlist-test.js
+'use strict';
 
-jest.dontMock('../components/itemList.jsx');
+jest.unmock('../Store');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
+import CheckboxWithLabel from '../CheckboxWithLabel';
 
-let ItemList = require('../components/itemList.jsx');
+describe('CheckboxWithLabel', () => {
 
-describe('item list', function() {
+  it('changes the text after click', () => {
+    // Render a checkbox with label in the document
+    const checkbox = TestUtils.renderIntoDocument(
+        <CheckboxWithLabel labelOn="On" labelOff="Off" />
+    );
 
-  it('displays three items with right text content', function() {
+    const checkboxNode = ReactDOM.findDOMNode(checkbox);
 
-    const testItems = ['foo', 'bar', 'wut'],
-      itemList = TestUtils.renderIntoDocument(<div><ItemList items={ testItems } loading={ false } /></div>);
+    // Verify that it's Off by default
+    expect(checkboxNode.textContent).toEqual('Off');
 
-    expect(ReactDOM.findDOMNode(itemList).textContent).toEqual(testItems.join(''));
+    // Simulate a click and verify that it is now On
+    TestUtils.Simulate.change(
+        TestUtils.findRenderedDOMComponentWithTag(checkbox, 'input')
+    );
+    expect(checkboxNode.textContent).toEqual('On');
   });
 
-  it('displays loading div', function() {
-    const itemList = TestUtils.renderIntoDocument(<div><ItemList items={[]} loading={ true } /></div>);
-
-    expect(ReactDOM.findDOMNode(itemList).textContent).toEqual('Loading...');
-  });
 });
