@@ -13,7 +13,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const config = {
     context: path.join(__dirname, 'client', 'src'),
     entry: [
-        './main.js'
+        './reefminder.jsx', 'bootstrap-loader'
     ],
     module: {
         loaders: [
@@ -40,8 +40,8 @@ const config = {
                 loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
             },
             {
-                test: /\.less$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!less-loader')
+                test: /\.scss$/,
+                loaders: ["style", "css?sourceMap", "sass?sourceMap"]
             }
         ]
     },

@@ -16,6 +16,9 @@ module.exports = extendConfig({
     debug: true,
     devtool: '#source-map',
     pathinfo: true,
+    entry: [
+        './reefminder.jsx'
+    ],
     output: {
         path: path.join(__dirname, 'build')
     },

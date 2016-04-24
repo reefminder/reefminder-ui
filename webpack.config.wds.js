@@ -17,9 +17,9 @@ module.exports = extendConfig({
     devtool: '#source-map',
     pathinfo: true,
     entry: [
-        `webpack-dev-server/client?http://localhost:9000`,
+        `webpack-dev-server/client?http://localhost:8080`,
         'webpack/hot/only-dev-server',
-        './main.js'
+        './reefminder.jsx'
     ],
     module: {
         loaders: [
