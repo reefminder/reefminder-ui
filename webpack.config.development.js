@@ -37,6 +37,12 @@ module.exports = extendConfig({
             favicon: '../assets/favicon.ico',
             environment: 'development'
         }),
-        new webpack.IgnorePlugin(/ReactContext|react\/addons/)
+        new webpack.IgnorePlugin(/ReactContext|react\/addons/),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery",
+            "window.Tether": 'tether'
+        })
     ]
 });
