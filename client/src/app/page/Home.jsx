@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Header from '../components/layout/header/Header.jsx'
 
 class Home extends React.Component {
 
@@ -12,14 +13,16 @@ class Home extends React.Component {
     }
 
     renderAddVehicleForm() {
-        return <div className="temp">
-            <div>
-                <label>
-                    A label
-                </label>
+        return
+        <Header>
+            <div className="temp">
+                <div>
+                    <label>
+                        A label
+                    </label>
+                </div>
             </div>
-
-        </div>;
+        </Header>;
     }
 }
 

@@ -8,8 +8,9 @@ var Home = require('../Home').default.WrappedComponent;
 
 describe('Home', () => {
 
-    it('renders empty div when no prs rules', () => {
+    it('renders ', () => {
         const tree = sd.shallowRender(<Home/>);
-        expect(tree.subTree('.temp').text()).toBe('A label');
+        //expect(tree.subTree('.temp').text()).toBe('A label');
+        expect(tree.findNode('Connect(Header)')).to.not.equal(false);
     });
 });
