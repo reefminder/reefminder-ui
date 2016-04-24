@@ -33,6 +33,7 @@ module.exports = extendConfig({
             title: `${pkg.name} ${pkg.version}-dev (${gitBranch.sync()})`,
             favicon: '../assets/favicon.ico',
             environment: 'development'
-        })
+        }),
+        new webpack.IgnorePlugin(/ReactContext|react\/addons/)
     ]
 });

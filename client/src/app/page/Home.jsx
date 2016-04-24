@@ -1,12 +1,26 @@
 import React from 'react';
-import PureRenderComponent from 'react-pure-render/component';
+import { connect } from 'react-redux';
 
-export default class HomePage extends PureRenderComponent {
+class Home extends React.Component {
+
+    componentDidMount() {
+        //this.props.dispatch(...);
+    }
+
     render() {
-        return (
+        return this.renderAddVehicleForm();
+    }
+
+    renderAddVehicleForm() {
+        return <div className="temp">
             <div>
-                Home, sweet home.
+                <label>
+                    A label
+                </label>
             </div>
-        );
+
+        </div>;
     }
 }
+
+export default connect(state => state)(Home);

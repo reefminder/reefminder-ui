@@ -17,7 +17,7 @@ module.exports = extendConfig({
     devtool: '#source-map',
     pathinfo: true,
     entry: [
-        `webpack-dev-server/client?http://localhost:3000`,
+        `webpack-dev-server/client?http://localhost:9000`,
         'webpack/hot/only-dev-server',
         './main.js'
     ],
