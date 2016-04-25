@@ -8,9 +8,15 @@ var Home = require('../Home').default.WrappedComponent;
 
 describe('Home', () => {
 
-    it('renders ', () => {
-        const tree = sd.shallowRender(<Home/>);
-        //expect(tree.subTree('.temp').text()).toBe('A label');
-        expect(tree.findNode('Connect(Header)')).to.not.equal(false);
+    let tree, vdom;
+
+    beforeEach(() => {
+        tree = sd.shallowRender(<Home/>);
+        vdom = tree.getRenderOutput();
+    });
+
+    it('renders a Home Page with a Header', () => {
+        expect(vdom.type).toEqual('nav');
+        expect(vdom.props.class).toEqual('navbar navbar-light bg-faded');
     });
 });

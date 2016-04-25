@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 class Header extends React.Component {
 
     render() {
-        return <nav class="navbar navbar-light bg-faded">
-            <a class="navbar-brand" href="#">Navbar</a>
+        return <nav className="navbar navbar-light bg-faded">
+            <a className="navbar-brand" href="#">ReefMinder</a>
         </nav>;
     }
 }

@@ -9,20 +9,14 @@ class Home extends React.Component {
     }
 
     render() {
-        return this.renderAddVehicleForm();
-    }
-
-    renderAddVehicleForm() {
-        return
-        <Header>
-            <div className="temp">
-                <div>
-                    <label>
-                        A label
-                    </label>
-                </div>
-            </div>
-        </Header>;
+        return  <Header/>;
+        //<div className="temp">
+        //    <div>
+        //        <label>
+        //            A label
+        //        </label>
+        //    </div>
+        //</div>;
     }
 }
 
