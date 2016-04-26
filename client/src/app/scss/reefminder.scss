@@ -1,4 +1,19 @@
 // This will contain imports to custom scss files - see path in .bootstraprc
-.davidsclass{
-  text-align: left;
+
+body {
+  background-color: lightblue;
+}
+
+.top-buffer {
+  margin-top:10px;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 6px 4px -4px black;
+  -moz-box-shadow: 0 6px 4px -4px black;
+  box-shadow: 0 6px 4px -4px black;
+}
+
+.header-height {
+  height:100px;
 }

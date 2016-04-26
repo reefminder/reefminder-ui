@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Header from '../components/layout/header/Header.jsx'
+import Header from '../components/layout/header/Header.jsx';
+import Card from '../components/card/Card.jsx';
 
 class Home extends React.Component {
 
@@ -9,14 +10,19 @@ class Home extends React.Component {
     }
 
     render() {
-        return  <Header/>;
-        //<div className="temp">
-        //    <div>
-        //        <label>
-        //            A label
-        //        </label>
-        //    </div>
-        //</div>;
+        return <div>
+            <Header/>
+            <div className="container">
+                <div className="row top-buffer">
+                    <div className="col-sm-6">
+                        <Card title="Davids Title" supportTitle="Support Title"/>
+                    </div>
+                    <div className="col-sm-6">
+                        <Card/>
+                    </div>
+                </div>
+            </div>
+        </div>;
     }
 }
 
