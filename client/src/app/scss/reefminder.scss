@@ -18,3 +18,22 @@ body {
   height:100px;
   border-radius: 0rem;
 }
+
+.icon-container {
+  height: 100px;
+}
+
+.icon-whale {
+  background: url('../../../assets/whale.svg');
+}
+
+.icon-droplet {
+  background: url('../../../assets/droplet.svg');
+}
+
+.icon-whale, .icon-droplet {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+}

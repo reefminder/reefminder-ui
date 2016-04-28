@@ -42,6 +42,10 @@ const config = {
             {
                 test: /\.scss$/,
                 loaders: ["style", "css?sourceMap", "sass?sourceMap"]
+            },
+            {
+                test: /\.svg/,
+                loader: 'svg-url-loader'
             }
         ]
     },

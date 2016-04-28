@@ -14,7 +14,11 @@ class Card extends React.Component {
     render() {
         return <div className="card">
             { getTitleBlock(this.props) }
-            <img data-src="../client/assets/favicon.ico" alt="Card image"/>
+                <div className="container">
+                    <div className="icon-container">
+                        <div className={ this.props.iconClass }/>
+                    </div>
+                </div>
                 <div className="card-block">
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" className="card-link">Card link</a>

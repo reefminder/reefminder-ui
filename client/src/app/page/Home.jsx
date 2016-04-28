@@ -14,11 +14,16 @@ class Home extends React.Component {
             <Header/>
             <div className="container">
                 <div className="row top-buffer">
+                    <div className="col-sm-12">
+                        <Card title="Davids Title" supportTitle="Support Title" iconClass="icon-whale"/>
+                    </div>
+                </div>
+                <div className="row top-buffer">
                     <div className="col-sm-6">
-                        <Card title="Davids Title" supportTitle="Support Title"/>
+                        <Card title="Davids Title" supportTitle="Support Title" iconClass="icon-droplet"/>
                     </div>
                     <div className="col-sm-6">
-                        <Card/>
+                        <Card title="Davids Title" supportTitle="Support Title" iconClass="icon-droplet"/>
                     </div>
                 </div>
             </div>
