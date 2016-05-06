@@ -12,7 +12,7 @@ const getTitleBlock = (props) => {
 class Card extends React.Component {
 
     render() {
-        return <div className="card">
+        return <div className="card shadow">
             { getTitleBlock(this.props) }
                 <div className="container">
                     <div className="icon-container">
