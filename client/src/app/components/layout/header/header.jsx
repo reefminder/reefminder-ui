@@ -5,7 +5,7 @@ class Header extends React.Component {
 
     render() {
         return <div>
-            <nav className="navbar navbar-dark bg-inverse header-height header">
+                <nav className="navbar navbar-dark bg-inverse header-height header">
                 <a className="navbar-brand" href="#">ReefMinder</a>
             </nav>
         </div>;

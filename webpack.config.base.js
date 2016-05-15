@@ -60,6 +60,11 @@ const config = {
         filename: 'bundle.js',
         publicPath: '/'
     },
+    externals: {
+        'react/addons': true,
+        'react/lib/ExecutionEnvironment': true,
+        'react/lib/ReactContext': true
+    },
     plugins: [
         new ExtractTextPlugin('bundle.css')
     ]
