@@ -2,7 +2,9 @@ jest.unmock('../Home');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { render } from 'enzyme';
+import { shallow } from 'enzyme';
+
+import Header from '../../components/layout/header/Header.jsx'
 
 var Home = require('../Home').default.WrappedComponent;
 
@@ -11,11 +13,11 @@ describe('Home', () => {
     let renderWrapper;
 
     beforeEach(() => {
-        renderWrapper = render(<Home />);
+        renderWrapper = shallow(<Home />);
     });
 
     it('renders a Navbar', () => {
-        expect(renderWrapper.find('Header').length).toEqual(1);
+        expect(renderWrapper.contains(<Header/>)).toBeTruthy();
     });
 
 });
