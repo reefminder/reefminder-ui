@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import placeholderImg from '../../../assets/placeholder.svg';
+import placeholderImg from '../../../../../assets/placeholder.svg';
 
 class Header extends React.Component {
 
