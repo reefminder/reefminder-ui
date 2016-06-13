@@ -35,12 +35,6 @@ module.exports = extendConfig({
             compress: {
                 warnings: false
             }
-        }),
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "window.jQuery": "jquery",
-            "window.Tether": 'tether'
         })
     ]
 });

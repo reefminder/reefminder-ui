@@ -21,7 +21,7 @@ const config = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loaders: [
-                    'babel?presets[]=es2015,presets[]=stage-0'
+                    'babel?presets[]=es2015,presets[]=stage-1'
                 ]
             },
             {
@@ -36,12 +36,8 @@ const config = {
                 loader: 'json'
             },
             {
-                test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
-            },
-            {
-                test: /\.scss$/,
-                loaders: ["style", "css?sourceMap", "sass?sourceMap"]
+                test: /(\.scss|\.css)$/,
+                loader: ExtractTextPlugin.extract('style', 'css!sass!toolbox')
             },
             {
                 test: /\.svg/,
@@ -50,19 +46,26 @@ const config = {
         ]
     },
     postcss: [autoprefixer, precss],
-    data: '@import "' + path.resolve(__dirname, 'theme/_theme.scss') + '";',
+    data: '@import "' + path.resolve(__dirname, 'theme/theme.scss') + '";',
     resolve: {
         root: [
             path.join(__dirname, 'client', 'src')
         ],
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx', '.scss', '.css'],
+        modulesDirectories: [
+            'node_modules',
+            path.resolve(__dirname, './node_modules')
+        ]
     },
     output: {
         filename: 'bundle.js',
         publicPath: '/'
     },
+    toolbox: {
+        theme: 'client/theme/theme.scss'
+    },
     plugins: [
-        new ExtractTextPlugin('bundle.css')
+        new ExtractTextPlugin('bundle.css', { allChunks: true })
     ]
 };
 

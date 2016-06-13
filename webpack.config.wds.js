@@ -49,12 +49,6 @@ module.exports = extendConfig({
             title: `${pkg.name} ${pkg.version}-dev-hot (${gitBranch.sync()})`,
             favicon: '../assets/favicon.ico',
             environment: 'development'
-        }),
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "window.jQuery": "jquery",
-            "window.Tether": 'tether'
         })
     ]
 });
