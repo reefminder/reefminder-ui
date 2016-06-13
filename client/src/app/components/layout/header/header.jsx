@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import placeholderImg from '../../../../../assets/placeholder.svg';
-import AppBar from 'react-toolbox/lib/app_bar';
+import AppBar from 'react-toolbox/lib/app_bar/AppBar';
 import appBarTheme from '../../../../../theme/app_bar.scss';
-import Avatar from 'react-toolbox/lib/avatar';
+import Avatar from 'react-toolbox/lib/avatar/Avatar';
 import avatarTheme from '../../../../../theme/avatar.scss';
 
 class Header extends React.Component {
