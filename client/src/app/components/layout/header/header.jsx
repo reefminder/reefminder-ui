@@ -12,7 +12,9 @@ class Header extends React.Component {
         return <div>
             <AppBar fixed flat theme={ appBarTheme }>
                 <a href="/home"><img className="icon-placeholder" src={ placeholderImg }/></a>
-                <Avatar theme={ avatarTheme } icon="folder" />
+                <div className="pull-right width-full">
+                    <Avatar theme={ avatarTheme } image="https://placeimg.com/80/80/animals" />
+                </div>
             </AppBar>
         </div>;
     }

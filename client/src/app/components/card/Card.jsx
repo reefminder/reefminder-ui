@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card as ToolboxCard, CardMedia, CardTitle, CardText, CardActions } from 'react-toolbox/lib/card';
-import cardTheme from '../../../theme/card.scss';
-
+import Button from 'react-toolbox/lib/button';
+import cardTheme from '../../../../theme/card.scss';
+import buttonTheme from '../../../../theme/button.scss';
 class Card extends React.Component {
 
     render() {
@@ -20,10 +21,10 @@ class Card extends React.Component {
                     title="Title goes here"
                     subtitle="Subtitle here"
                 />
-                <CardText>{dummyText}</CardText>
-                <CardActions theme={theme}>
-                    <Button label="Action 1" />
-                    <Button label="Action 2" />
+                <CardText>Some Dummy Text</CardText>
+                <CardActions theme={ cardTheme }>
+                    <Button label="Action 1" theme={ buttonTheme } />
+                    <Button label="Action 2" theme={ buttonTheme } />
                 </CardActions>
             </ToolboxCard>
         </div>;

@@ -1,10 +1,14 @@
-@import "../../node_modules/react-toolbox/lib/colors.scss";
-@import "../../node_modules/react-toolbox/lib/globals.scss";
-@import "../../node_modules/react-toolbox/lib/mixins.scss";
-
 $color-primary: $palette-indigo-500 !default;
 $color-primary-dark: $palette-indigo-700 !default;
 $color-accent: $palette-pink-a200 !default;
 $color-accent-dark: $palette-pink-700 !default;
 $color-primary-contrast: $color-dark-contrast !default;
 $color-accent-contrast: $color-dark-contrast !default;
+
+.pull-right{
+  text-align: right
+}
+
+.width-full {
+  width: 100%
+}

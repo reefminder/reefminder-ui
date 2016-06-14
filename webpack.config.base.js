@@ -37,7 +37,7 @@ const config = {
             },
             {
                 test: /\.(scss|css)$/,
-                loader: 'style-loader!css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]-[local]___[hash:base64:5]!sass-loader?sourceMap!toolbox-loader'
+                loader: ExtractTextPlugin.extract('style-loader!css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]-[local]___[hash:base64:5]!sass-loader?sourceMap!toolbox-loader')
             },
             {
                 test: /\.svg/,
