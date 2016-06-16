@@ -1,13 +1,13 @@
 import React from 'react';
 import { Card as ToolboxCard, CardMedia, CardTitle, CardText, CardActions } from 'react-toolbox/lib/card';
 import Button from 'react-toolbox/lib/button';
-import cardTheme from '../../../../theme/card.scss';
-import buttonTheme from '../../../../theme/button.scss';
+import cardTheme from '../../../../style/theme/card.scss';
+import buttonTheme from '../../../../style/theme/button.scss';
 class Card extends React.Component {
 
     render() {
         return <div>
-            <ToolboxCard style={{width: '350px'}} theme={ cardTheme }>
+            <ToolboxCard theme={ cardTheme }>
                 <CardTitle
                     avatar="https://placeimg.com/80/80/animals"
                     title="Avatar style title"

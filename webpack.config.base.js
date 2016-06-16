@@ -37,7 +37,7 @@ const config = {
             },
             {
                 test: /\.(scss|css)$/,
-                loader: ExtractTextPlugin.extract('style-loader!css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]-[local]___[hash:base64:5]!sass-loader?sourceMap!toolbox-loader')
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap&modules&importLoaders=1&localIdentName=[local]!postcss-loader!sass-loader?sourceMap!toolbox-loader')
             },
             {
                 test: /\.svg/,
@@ -46,7 +46,6 @@ const config = {
         ]
     },
     postcss: [autoprefixer, precss],
-    data: '@import "' + path.resolve(__dirname, 'theme/theme.scss') + '";',
     resolve: {
         root: [
             path.join(__dirname, 'client', 'src')
@@ -62,7 +61,7 @@ const config = {
         publicPath: '/'
     },
     toolbox: {
-        theme: 'client/theme/theme.scss'
+        theme: 'client/style/theme/theme.scss'
     },
     plugins: [
         new ExtractTextPlugin('bundle.css', { allChunks: true })
