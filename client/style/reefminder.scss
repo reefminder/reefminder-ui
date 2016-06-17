@@ -4,6 +4,37 @@ body {
   background-color: $rm-color-dark
 }
 
+@media only screen and (min-width: 34rem) {
+  .feature, .info { width: 50%; }
+}
+@media only screen and (min-width: 54rem) {
+  .content { width: 66.66%; }
+  .sidebar { width: 33.33%; }
+  .info    { width: 100%;   }
+}
+@media only screen and (min-width: 76rem) {
+  .content { width: 58.33%; } /* 7/12 */
+  .sidebar
+  { width: 41.66%; } /* 5/12 */
+  .info    { width: 50%;    }
+}
+
+.row .row { margin:  0 -1.5rem; }
+.col      { padding: 0  1.5rem; }
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen { .col {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}}
+
+
 .pull-right {
   text-align: right
 }

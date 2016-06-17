@@ -12,7 +12,14 @@ class Home extends React.Component {
     render() {
         return (<div>
             <Header/>
-            <Card/>
+            <div className="row">
+                <div className="col feature">
+                    <Card/>
+                </div>
+                <div className="col feature">
+                    <Card/>
+                </div>
+            </div>
         </div>);
     }
 }
