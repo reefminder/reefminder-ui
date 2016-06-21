@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import placeholderImg from '../../../../../assets/placeholder.svg';
+import placeholderImg from '../../../../../assets/reefminder-logo.svg';
 import AppBar from 'react-toolbox/lib/app_bar/AppBar';
 import appBarTheme from '../../../../../style/theme/app_bar.scss';
 import Avatar from 'react-toolbox/lib/avatar/Avatar';
