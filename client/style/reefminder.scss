@@ -1,7 +1,8 @@
 @import "reefminder-colors";
+@import "function_bar";
 
 body {
-  background-color: $rm-color-dark
+  background-color: $rm-color-green
 }
 
 @media only screen and (min-width: 34rem) {
@@ -34,7 +35,6 @@ body {
   box-sizing: border-box;
 }}
 
-
 .pull-right {
   text-align: right
 }
@@ -44,5 +44,5 @@ body {
 }
 
 .spacer-app-bar {
-  height: 130px
+  height: 150px
 }

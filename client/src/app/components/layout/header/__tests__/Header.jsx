@@ -2,25 +2,26 @@ jest.unmock('../Header');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { render } from 'enzyme';
-
-var Header = require('../Header').default.WrappedComponent;
+import { shallow } from 'enzyme';
+import AppBar from 'react-toolbox/lib/app_bar/AppBar';
+import Avatar from 'react-toolbox/lib/avatar/Avatar';
+import Header from '../Header.jsx';
 
 describe('Header', () => {
 
-    let renderWrapper;
+    let wrapper;
 
     beforeEach(() => {
-        renderWrapper = render(<Header />);
+        wrapper = shallow(<Header/>);
     });
 
-    it('renders a Navbar', () => {
-        expect(renderWrapper.find('nav').length).toEqual(1);
-        expect(renderWrapper.find('.navbar').length).toEqual(1);
+    it('renders an AppBar', () => {
+        expect(wrapper.find(AppBar).length).toEqual(1);
+        console.log(wrapper.find(AppBar).props());
     });
 
     it('renders a Navbar brand', () => {
-        expect(renderWrapper.text()).toEqual('ReefMinder');
-        expect(renderWrapper.find('.navbar-brand').length).toEqual(1);
+        //expect(wrapper.text()).toEqual('ReefMinder');
+        //expect(wrapper.find('.navbar-brand').length).toEqual(1);
     });
 });
