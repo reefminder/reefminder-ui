@@ -1,12 +1,18 @@
-$rm-colorblue: #00ACE9;
+$rm-color-blue: #00ACE9;
 $rm-color-red: #D43F3F;
+$rm-color-light-green: #d6ffaf;
 $rm-color-green: #6A9A1F;
+$rm-color-dark-green: #435439;
+$rm-color-purple: #77418e;
 $rm-color-light: #F6F6E8;
 $rm-color-dark: #313131;
 $rm-color-darker: #0C0C0C;
+$rm-color-greyblue-light: #406f9a;
+$rm-color-greyblue: #254b6e;
+$rm-color-greyblue-dark: #1b3f60;
 
 $color-primary: $rm-color-light !default;
-$color-primary-dark: $rm-color-darker !default;
+$color-primary-dark: $rm-color-greyblue-dark !default;
 $color-accent: $palette-pink-a200 !default;
 $color-accent-dark: $palette-pink-700 !default;
 $color-primary-contrast: $color-dark-contrast !default;

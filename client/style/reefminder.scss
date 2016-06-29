@@ -2,7 +2,15 @@
 @import "function_bar";
 
 body {
-  background-color: $rm-color-green
+  background-color: $rm-color-greyblue;
+}
+
+@media only screen {
+  .col {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media only screen and (min-width: 34rem) {
@@ -28,12 +36,6 @@ body {
   clear: both;
   display: table;
 }
-
-@media only screen { .col {
-  float: left;
-  width: 100%;
-  box-sizing: border-box;
-}}
 
 .pull-right {
   text-align: right

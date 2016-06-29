@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Header from '../components/layout/header/Header.jsx';
+import Header from '../components/header/Header.jsx';
+import TabBar from '../components/tab-bar/TabBar.jsx'
 import Card from '../components/card/Card.jsx';
 
 class Home extends React.Component {
@@ -12,14 +13,7 @@ class Home extends React.Component {
     render() {
         return (<div>
             <Header/>
-            <div className="row">
-                <div className="col feature">
-                    <Card/>
-                </div>
-                <div className="col feature">
-                    <Card/>
-                </div>
-            </div>
+            <TabBar/>
         </div>);
     }
 }
