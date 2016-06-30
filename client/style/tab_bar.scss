@@ -1,0 +1,15 @@
+.tab {
+  background-color: $rm-color-green;
+  height: 4rem;
+  width: 8rem;
+  margin-right: 0.2rem;
+  float: left;
+}
+
+.tab:nth-of-type(1) {
+  background: $rm-color-purple;
+}
+
+.tab:nth-of-type(2) {
+  background: $rm-color-blue;
+}

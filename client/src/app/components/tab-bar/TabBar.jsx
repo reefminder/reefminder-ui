@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Card from '../card/Card.jsx'
+import Tab from '../tab-bar/Tab.jsx'
 
 class TabBar extends React.Component {
 
@@ -8,7 +8,9 @@ class TabBar extends React.Component {
         return <div>
             <div className="row">
                 <div className="col">
-                    <Card/>
+                    <Tab title={"title 1"}/>
+                    <Tab title={"title 2"}/>
+                    <Tab title={"title 3"}/>
                 </div>
             </div>
         </div>;
