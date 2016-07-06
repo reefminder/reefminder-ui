@@ -17,4 +17,5 @@ describe('Tab', () => {
         wrapper = render(<Tab title={"im a title"}/>);
         expect(wrapper.find('.tab').text()).toEqual("im a title");
     });
+
 });
