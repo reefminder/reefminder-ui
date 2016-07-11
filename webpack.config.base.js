@@ -40,8 +40,8 @@ const config = {
                 loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap&modules&importLoaders=1&localIdentName=[local]!postcss-loader!sass-loader?sourceMap!toolbox-loader')
             },
             {
-                test: /\.svg/,
-                loader: 'svg-url-loader'
+                test: /\.(svg|png)$/,
+                loader: 'file-loader'
             }
         ]
     },

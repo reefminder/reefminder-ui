@@ -1,7 +1,17 @@
 @import "reefminder-colors";
+@import "function_bar";
+@import "tabs";
 
 body {
-  background-color: $rm-color-dark
+  background-color: $rm-color-greyblue;
+}
+
+@media only screen {
+  .col {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media only screen and (min-width: 34rem) {
@@ -28,13 +38,6 @@ body {
   display: table;
 }
 
-@media only screen { .col {
-  float: left;
-  width: 100%;
-  box-sizing: border-box;
-}}
-
-
 .pull-right {
   text-align: right
 }
@@ -44,5 +47,11 @@ body {
 }
 
 .spacer-app-bar {
-  height: 130px
+  height: 150px
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50rem;
 }

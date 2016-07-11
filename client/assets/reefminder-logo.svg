@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="194px" height="32px" viewBox="0 0 194 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="28.3537481 11.7959304 28.3537481 31.2301226 14.1768741 25.4656671 14.1768741 6.03147491"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14.1768741" height="25.1986477" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <polygon id="path-3" points="14.1768741 11.7959304 14.1768741 31.2301226 0 25.4656671 0 6.03147491"></polygon>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14.1768741" height="25.1986477" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <polygon id="path-5" points="14.100258 0.188000832 28.3537481 6.04738971 14.2532896 11.902451 0 6.04976881"></polygon>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="28.3537481" height="11.7144502" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo-for-Export" transform="translate(-4.000000, -12.000000)">
+            <g id="Logo" transform="translate(4.000000, 3.000000)">
+                <g>
+                    <text id="minder" font-family="AmericanTypewriter-Light, American Typewriter" font-size="34.475" font-weight="300" fill="#FFFFFF">
+                        <tspan x="105" y="33">inder</tspan>
+                    </text>
+                    <text id="reef" font-family="AmericanTypewriter-Bold, American Typewriter" font-size="34.475" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="0" y="33">reef</tspan>
+                    </text>
+                    <g id="Cube" opacity="0.75" transform="translate(73.000000, 9.000000)">
+                        <g id="Cube-Border" stroke="#000000" stroke-width="6">
+                            <use id="Rectangle-1-Copy-3" mask="url(#mask-2)" transform="translate(21.265311, 18.630799) scale(1, -1) translate(-21.265311, -18.630799) " xlink:href="#path-1"></use>
+                            <use id="Rectangle-1" mask="url(#mask-4)" xlink:href="#path-3"></use>
+                            <use id="Rectangle-1" mask="url(#mask-6)" xlink:href="#path-5"></use>
+                        </g>
+                        <g id="Cube-Center" transform="translate(0.450059, 0.508305)">
+                            <polygon id="Rectangle-1-Copy-3" fill="#4990E2" transform="translate(20.590222, 18.021047) scale(1, -1) translate(-20.590222, -18.021047) " points="27.4536291 11.4066582 27.4536291 30.213941 13.7268146 24.6354357 13.7268146 5.82815293"></polygon>
+                            <polygon id="Rectangle-1" fill="#679DDD" points="13.7268146 11.4066582 13.7268146 30.213941 0 24.6354357 0 5.82815293"></polygon>
+                            <polygon id="Rectangle-1" fill="#A3C5ED" points="13.6526308 0.17317802 27.4536291 5.84355435 13.8008042 11.5097427 0 5.8458567"></polygon>
+                        </g>
+                    </g>
+                    <polyline id="Path-43" stroke="#FFFFFF" stroke-width="3" points="73 36 73 15 87.6780119 21.1981427 101.621042 15.3684211 101.621041 36"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
