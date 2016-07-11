@@ -1,52 +1,69 @@
-.tabs-container {
-
-}
+$rm-tab-space: 8rem;
 
 .tab-container {
   float: left;
-  width: 100%;
   position: fixed;
+  z-index: 50;
+
+  .tab {
+    background-color: $rm-color-dark;
+    height: 4rem;
+    width: 8rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .tab:active {
+    background-color: orange;
+  }
 }
 
-.tab {
-  background-color: $rm-color-green;
-  height: 4rem;
-  width: 8rem;
-  margin-right: 0.2rem;
-  margin-bottom: 0.2rem;
+.tab-content-container {
+  float: left;
+  position: fixed;
+  width: 50rem;
+
+  .tab-content {
+    background-color: $rm-color-green;
+  }
 }
 
-.tab:active {
-  background-color: orange;
+.tab-container:nth-of-type(2) {
+
+  z-index: 49;
+
+  .tab {
+    margin-left: $rm-tab-space + 0.2;
+  }
+
+  .tab:active {
+    background-color: orange;
+  }
 }
 
-.tab:nth-of-type(1) {
-  background: $rm-color-purple;
+.tab-content-container:nth-of-type(2) {
+
+  .tab-content {
+    background-color: blue;
+  }
 }
 
-.tab:nth-of-type(1):active {
-  background: grey;
+.tab-container:nth-of-type(3) {
+
+  z-index: 48;
+
+  .tab {
+    margin-left: ($rm-tab-space * 2) + 0.3;
+  }
+
+  .tab:active {
+    background-color: orange;
+  }
 }
 
-.tab:nth-of-type(2) {
-  background: $rm-color-blue;
-  border-left: 8rem;
+.tab-content-container:nth-of-type(3) {
+
+  .tab-content {
+    background-color: red;
+  }
 }
 
-.tab:nth-of-type(2):active {
-  background: mediumpurple;
-}
-
-.tab-content {
-  width: 100%;
-  background-color: $rm-color-green;
-  min-height: 10rem;
-}
-
-.tab-content:nth-of-type(1) {
-  background: $rm-color-purple;
-}
-
-.tab-content:nth-of-type(2) {
-  background: $rm-color-blue;
-}
