@@ -1,27 +1,19 @@
 import React from 'react';
-import Tabs from './Tabs.jsx';
+
+import Avatar from '../../../../../node_modules/react-toolbox/lib/avatar/Avatar';
+import avatarTheme from '../../../../style/theme/avatar.scss';
 
 export default class Tab extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {
-          isActive: false
-        };
-
-        //this.tabClick = this.tabClick.bind(this);
-    }
-
-
-
     render() {
         return <div className="tab-container">
-            <div className="tab" onClick={ this.props.onClick }>
-                { this.props.title }
+            <div className={ this.props.isActive ? "tab active" : "tab" } onClick={ this.props.tabClick.bind(this) }>
+                <Avatar theme={ avatarTheme } image="https://placeimg.com/80/80/animals" />
+                { " " + this.props.title }
             </div>
             <div className="tab-content-container">
-                { this.state.isActive ?<div className="tab-content"> { this.props.children } </div>: "" }
+                { this.props.isActive ? <div className="tab-content"> { this.props.children } </div> : "" }
             </div>
         </div>;
-    }
+    };
 }
