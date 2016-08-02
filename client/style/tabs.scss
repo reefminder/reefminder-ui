@@ -1,19 +1,36 @@
 $rm-tab-space: 12rem;
+$rm-tab-space-small: 3rem;
 
 .tab-container {
   float: left;
   position: fixed;
   z-index: 50;
 
+  .tab-title-text {
+     display: none;
+  }
+
+  @media only screen and (min-width: 54rem) {
+    .tab-title-text {
+      display: inline;
+    }
+  }
+
   .tab {
     background-color: $rm-color-dark;
-    width: 11rem;
+    width: 2.2rem;
     margin-right: 0.2rem;
     margin-bottom: 0.2rem;
     padding: 0.5rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 1rem;
     color: white;
+  }
+
+  @media only screen and (min-width: 54rem) {
+    .tab {
+      width: 11rem;
+    }
   }
 
   .active{
@@ -37,7 +54,13 @@ $rm-tab-space: 12rem;
 .tab-content-container {
   float: left;
   position: fixed;
-  width: 50rem;
+  width: 95%;
+}
+
+@media only screen and (min-width: 50rem) {
+  .tab-content-container {
+    width: 50rem;
+  }
 }
 
 .tab-container:nth-of-type(2) {
@@ -45,7 +68,13 @@ $rm-tab-space: 12rem;
   z-index: 49;
 
   .tab {
-    margin-left: $rm-tab-space + 0.2;
+    margin-left: $rm-tab-space-small + 0.4;
+  }
+
+  @media only screen and (min-width: 54rem) {
+    .tab {
+      margin-left: $rm-tab-space + 0.2;
+    }
   }
 
   .active{
@@ -66,7 +95,13 @@ $rm-tab-space: 12rem;
   z-index: 48;
 
   .tab {
-    margin-left: ($rm-tab-space * 2) + 0.4;
+    margin-left: ($rm-tab-space-small * 2) + 0.8;
+  }
+
+  @media only screen and (min-width: 54rem) {
+    .tab {
+      margin-left: ($rm-tab-space * 2) + 0.4;
+    }
   }
 
   .active{
