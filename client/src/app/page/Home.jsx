@@ -16,13 +16,13 @@ class Home extends React.Component {
             <Header/>
             <div className="center">
                 <Tabs>
-                    <Tab title="im a title" onclick="tabClick()">
+                    <Tab title="Temperature">
                         Some tab content
                     </Tab>
-                    <Tab title="im another title" onclick="tabClick()">
+                    <Tab title="Dissolved Oxygen">
                         Some more tab content
                     </Tab>
-                    <Tab title="im another other title" onclick="tabClick()">
+                    <Tab title="Water Level">
                         Some more more tab content
                     </Tab>
                 </Tabs>

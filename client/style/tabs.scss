@@ -1,29 +1,65 @@
-$rm-tab-space: 8rem;
+$rm-tab-space: 12rem;
+$rm-tab-space-small: 3rem;
 
 .tab-container {
   float: left;
   position: fixed;
   z-index: 50;
 
+  .tab-title-text {
+     display: none;
+  }
+
+  @media only screen and (min-width: 54rem) {
+    .tab-title-text {
+      display: inline;
+    }
+  }
+
   .tab {
     background-color: $rm-color-dark;
-    height: 4rem;
-    width: 8rem;
+    width: 2.2rem;
     margin-right: 0.2rem;
     margin-bottom: 0.2rem;
+    padding: 0.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1rem;
+    color: white;
   }
+
+  @media only screen and (min-width: 54rem) {
+    .tab {
+      width: 11rem;
+    }
+  }
+
+  .active{
+    background-color: $rm-color-green;
+  }
+
   .tab:active {
     background-color: orange;
+  }
+
+  .tab-content {
+    background-color: $rm-color-green;
+  }
+
+  .avatar {
+    height: 2.2rem;
+    width: 2.2rem;
   }
 }
 
 .tab-content-container {
   float: left;
   position: fixed;
-  width: 50rem;
+  width: 95%;
+}
 
-  .tab-content {
-    background-color: $rm-color-green;
+@media only screen and (min-width: 50rem) {
+  .tab-content-container {
+    width: 50rem;
   }
 }
 
@@ -32,18 +68,25 @@ $rm-tab-space: 8rem;
   z-index: 49;
 
   .tab {
-    margin-left: $rm-tab-space + 0.2;
+    margin-left: $rm-tab-space-small + 0.4;
+  }
+
+  @media only screen and (min-width: 54rem) {
+    .tab {
+      margin-left: $rm-tab-space + 0.2;
+    }
+  }
+
+  .active{
+    background-color: red;
   }
 
   .tab:active {
     background-color: orange;
   }
-}
-
-.tab-content-container:nth-of-type(2) {
 
   .tab-content {
-    background-color: blue;
+    background-color: red;
   }
 }
 
@@ -52,18 +95,24 @@ $rm-tab-space: 8rem;
   z-index: 48;
 
   .tab {
-    margin-left: ($rm-tab-space * 2) + 0.3;
+    margin-left: ($rm-tab-space-small * 2) + 0.8;
+  }
+
+  @media only screen and (min-width: 54rem) {
+    .tab {
+      margin-left: ($rm-tab-space * 2) + 0.4;
+    }
+  }
+
+  .active{
+    background-color: purple;
   }
 
   .tab:active {
-    background-color: orange;
+    background-color: pink;
   }
-}
-
-.tab-content-container:nth-of-type(3) {
 
   .tab-content {
-    background-color: red;
+    background-color: purple;
   }
 }
-
