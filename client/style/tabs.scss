@@ -54,12 +54,18 @@ $rm-tab-space-small: 3rem;
 .tab-content-container {
   float: left;
   position: fixed;
-  width: 95%;
+  width: 30rem;
 }
 
 @media only screen and (min-width: 50rem) {
   .tab-content-container {
-    width: 50rem;
+    width: 40rem;
+  }
+}
+
+@media only screen and (min-width: 80rem) {
+  .tab-content-container {
+    width: 55rem;
   }
 }
 

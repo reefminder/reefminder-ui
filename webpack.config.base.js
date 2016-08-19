@@ -21,14 +21,14 @@ const config = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loaders: [
-                    'babel?presets[]=es2015,presets[]=stage-1'
+                    'babel-loader'
                 ]
             },
             {
                 test: /\.jsx$/,
                 exclude: /node_modules/,
                 loaders: [
-                    'babel?presets[]=es2015,presets[]=stage-1,presets[]=react,plugins[]=babel-plugin-transform-decorators-legacy'
+                    'babel-loader'
                 ]
             },
             {

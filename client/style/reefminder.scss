@@ -1,9 +1,17 @@
 @import "reefminder-colors";
 @import "function_bar";
+@import "left_rail";
 @import "tabs";
+@import "card";
 
 body {
-  background-color: $rm-color-greyblue;
+  background-color: #F5F5F5;
+}
+
+#viewport {
+  margin: 150px auto 100px 400px;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen {
@@ -44,10 +52,6 @@ body {
 
 .width-full {
   width: 100%
-}
-
-.spacer-app-bar {
-  height: 150px
 }
 
 .center {

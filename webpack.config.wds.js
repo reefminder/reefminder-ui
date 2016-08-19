@@ -26,7 +26,7 @@ module.exports = extendConfig({
             {
                 test: /\.jsx$/,
                 loaders: [
-                    'react-hot'
+                    'react-hot', 'babel-loader'
                 ]
             }
         ]

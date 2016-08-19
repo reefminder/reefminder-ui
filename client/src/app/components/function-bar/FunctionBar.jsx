@@ -1,7 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-class FunctionBar extends React.Component {
+export const mapStateToProps = state => {
+    return {
+
+    };
+};
+
+@connect(mapStateToProps)
+export default class FunctionBar extends React.Component {
 
     render() {
         return <div>
@@ -12,5 +19,3 @@ class FunctionBar extends React.Component {
         </div>;
     }
 }
-
-export default connect(state => state)(FunctionBar);

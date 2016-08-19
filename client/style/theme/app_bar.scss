@@ -1,13 +1,13 @@
 @import "../../../node_modules/react-toolbox/lib/app_bar/theme";
 
-.shadow-override {
-  box-shadow: 0 0px 2px 1px $rm-color-greyblue-dark !important;
-}
-
 .appBar.fixed {
   position: fixed;
-  top: 1.5rem;
   right: 0;
   left: 0;
   z-index: 300;
+  height: 4rem;
+  background-color: white;
+  border-bottom: #2c3e50;
+  box-shadow: none;
+  padding: 0.5rem;
 }
