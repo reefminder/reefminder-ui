@@ -33,7 +33,7 @@ export default class Tabs extends React.Component {
     };
 
     render() {
-        return <div onClick={ this.onContainerClick }>
+        return <div className="tabs-container" onClick={ this.onContainerClick }>
             { this.state.childrenWithProps }
         </div>;
     };

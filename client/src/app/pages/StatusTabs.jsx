@@ -18,7 +18,7 @@ export default class StatusTabs extends React.Component {
     }
 
     render() {
-        return (<div className="center">
+        return (<div>
             <Tabs>
                 <Tab title="Temperature">
                     <TemperatureCard />

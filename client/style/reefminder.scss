@@ -9,9 +9,10 @@ body {
 }
 
 #viewport {
-  margin: 150px auto 100px 400px;
+  margin: 150px auto 100px 450px;
   display: flex;
   justify-content: center;
+  height:100vh;
 }
 
 @media only screen {

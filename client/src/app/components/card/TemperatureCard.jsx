@@ -1,11 +1,8 @@
 import React from 'react';
-import { Card as ToolboxCard, CardMedia, CardTitle, CardText, CardActions } from 'react-toolbox/lib/card';
-import Button from 'react-toolbox/lib/button';
-import cardTheme from '../../../../style/theme/card.scss';
-import buttonTheme from '../../../../style/theme/button.scss';
+import Card from './Card.jsx';
 import { Line } from 'react-chartjs-2';
 
-export default class Card extends React.Component {
+export default class TemperatureCard extends React.Component {
 
     static data = {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -36,23 +33,7 @@ export default class Card extends React.Component {
 
     render() {
         return <div>
-            <ToolboxCard theme={ cardTheme }>
-                <CardTitle small
-                    avatar="https://placeimg.com/80/80/animals"
-                    title="Avatar style title"
-                    subtitle="Subtitle here"
-                />
-                <CardMedia
-                    aspectRatio="wide"
-                    image="https://placeimg.com/800/450/nature"
-                />
-                <Line data={ Card.data }/>
-                <CardText>Some Dummy Text</CardText>
-                <CardActions theme={ cardTheme }>
-                    <Button label="Action 1" theme={ buttonTheme } />
-                    <Button label="Action 2" theme={ buttonTheme } />
-                </CardActions>
-            </ToolboxCard>
+            <Line data={ TemperatureCard.data }/>
         </div>;
     }
 }
