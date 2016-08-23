@@ -1,6 +1,6 @@
 import React from 'react';
 
-let activeTabIndex = null;
+let activeTab = null;
 
 export default class Tabs extends React.Component {
 
@@ -14,14 +14,14 @@ export default class Tabs extends React.Component {
         return React.Children.map(this.props.children,
             (child) => React.cloneElement(child, {
                 tabClick: this.tabClick,
-                isActive: activeTabIndex === i ? true : false,
+                isActive: activeTab && activeTab.props.id === i ? true : false,
                 id: i++
             })
         );
     };
 
     tabClick(){
-        activeTabIndex = this.props.id;
+        activeTab = this;
     };
 
     onContainerClick(){
@@ -33,8 +33,11 @@ export default class Tabs extends React.Component {
     };
 
     render() {
-        return <div className="tabs-container" onClick={ this.onContainerClick }>
-            { this.state.childrenWithProps }
+        return <div>
+            <div className="tabs-container" onClick={ this.onContainerClick }>
+                { this.state.childrenWithProps }
+            </div>
+            { activeTab ? activeTab.props.children : "" }
         </div>;
     };
 }

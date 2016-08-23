@@ -17,7 +17,17 @@ export default class Layout extends React.Component {
                     YOUR AQUARIUMS
                 </div>
                 <div className="rail-link">
-                    This is content
+                    This is a link
+                </div>
+                <div className="rail-divide"/>
+                <div className="rail-link">
+                    This is another link
+                </div>
+                <div className="rail-info">
+                    USER PROFILE
+                </div>
+                <div className="rail-link">
+                    This is a link
                 </div>
             </div>
         )

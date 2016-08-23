@@ -11,14 +11,14 @@ export default class TemperatureCard extends React.Component {
                 label: 'My First dataset',
                 fill: false,
                 lineTension: 0.1,
-                backgroundColor: 'rgba(75,192,192,0.4)',
-                borderColor: 'rgba(75,192,192,1)',
+                backgroundColor: 'white',
+                borderColor: 'white',
                 borderCapStyle: 'butt',
                 borderDash: [],
                 borderDashOffset: 0.0,
                 borderJoinStyle: 'miter',
-                pointBorderColor: 'rgba(75,192,192,1)',
-                pointBackgroundColor: '#fff',
+                pointBorderColor: 'white',
+                pointBackgroundColor: 'white',
                 pointBorderWidth: 1,
                 pointHoverRadius: 5,
                 pointHoverBackgroundColor: 'rgba(75,192,192,1)',
@@ -31,9 +31,50 @@ export default class TemperatureCard extends React.Component {
         ]
     };
 
+    static options = {
+        legend: {
+            labels: {
+                fontColor: 'white'
+            }
+        },
+        scales: {
+            scaleLabel: {
+                fontColor: 'white'
+            },
+            xAxes: [{
+                gridLines: {
+                    color: 'white'
+                },
+                scaleLabel: {
+                    fontColor: 'white',
+                    display: true,
+                    labelString: 'Hello',
+                    fontSize: 20
+                },
+                ticks: {
+                    fontColor: 'white'
+                }
+            }],
+            yAxes: [{
+                gridLines: {
+                    color: 'white'
+                },
+                scaleLabel: {
+                    fontColor: 'white',
+                    display: true,
+                    labelString: 'Hello',
+                    fontSize: 20
+                },
+                ticks: {
+                    fontColor: 'white'
+                }
+            }]
+        }
+    };
+
     render() {
         return <div>
-            <Line data={ TemperatureCard.data }/>
+            <Line data={ TemperatureCard.data } options={ TemperatureCard.options }/>
         </div>;
     }
 }

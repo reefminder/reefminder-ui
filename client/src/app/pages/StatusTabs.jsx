@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Tabs from '../components/tabs/Tabs.jsx';
 import Tab from '../components/tabs/Tab.jsx';
+import TabContent from '../components/tabs/TabContent.jsx';
 import TemperatureCard from '../components/card/TemperatureCard.jsx'
 
 export const mapStateToProps = state => {
@@ -20,14 +21,20 @@ export default class StatusTabs extends React.Component {
     render() {
         return (<div>
             <Tabs>
-                <Tab title="Temperature">
-                    <TemperatureCard />
+                <Tab title="Temperature" color="red">
+                    <TabContent color="red">
+                        <TemperatureCard />
+                    </TabContent>
                 </Tab>
-                <Tab title="Dissolved Oxygen">
-                    Some more tab content
+                <Tab title="Dissolved Oxygen" color="blue">
+                    <TabContent color="blue">
+                        Some more tab content
+                    </TabContent>
                 </Tab>
-                <Tab title="Water Level">
-                    Some more more tab content
+                <Tab title="Water Level" color="green">
+                    <TabContent color="green">
+                        Some more more tab content
+                    </TabContent>
                 </Tab>
             </Tabs>
         </div>);

@@ -37,24 +37,23 @@
   }
 
   .rail-link {
-    background-color: #1b3f60;
+    background-color: #42586E;
     height: 2rem;
     padding: 1rem;
     text-align: right;
   }
 
   .rail-link:hover {
-    background-color: green;
+    background-color: #42586E;
     height: 2rem;
     padding: 1rem;
-    border-right: 1rem solid blue;
   }
 
   .rail-link:active {
-    background-color: purple;
+    background-color: #42586E;
     height: 2rem;
     padding: 1rem;
-    border-right: 1rem solid orange;
+    border-right: 1rem solid #CACA00;
   }
 
   .rail-divide {
@@ -64,7 +63,7 @@
 
 }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 78rem) {
   .rail-container {
     display: inline-block;
   }

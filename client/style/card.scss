@@ -1,6 +1,12 @@
 .card {
-  width: 60rem;
+  width: 20rem;
   background-color: #ffffff;
   box-shadow: 1px 1px 5px 1px #e1e1e1;
   padding: 1rem;
+}
+
+@media only screen and (min-width: 54rem) {
+  .card {
+    width: 60rem;
+  }
 }
