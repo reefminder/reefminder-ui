@@ -1,22 +1,38 @@
-jest.unmock('../TabContent');
+jest.unmock('../Tabs');
 
 import React from 'react';
-import TabContent from '../Tabs.jsx';
-import { render } from 'enzyme';
+import Tabs from '../Tabs.jsx';
+import Tab from '../Tab.jsx';
+import TabContent from '../TabContent.jsx';
+import { mount } from 'enzyme';
 
-describe('TabContent', () => {
+describe('Tabs', () => {
 
     let wrapper;
 
-   it('should render a tab content section', () => {
-       wrapper = render(<TabContent/>);
-   }) ;
-
-    it('should render some content', () => {
-       wrapper = render(<TabContent>im some content</TabContent>);
+    it('should clone nested react elements and inject properties', () => {
+        wrapper = mount(<Tabs>
+            <Tab></Tab>
+        </Tabs>);
+        expect(wrapper.find('Tab').props().tabClick).toBeDefined();
+        expect(wrapper.find('Tab').props().isActive).toBe(false);
+        expect(wrapper.find('Tab').props().id).toBe(0);
     });
 
-    it('should not render some content if the hidden flag is true', () => {
-        wrapper = render(<TabContent hidden={ true }>im some content</TabContent>);
+    it('should nest components', () => {
+        wrapper = mount(<Tabs>
+            <Tab>
+                <TabContent>Some Content</TabContent>
+            </Tab>
+            <Tab>
+                <TabContent>Some more Content</TabContent>
+            </Tab>
+        </Tabs>);
+        const tabWrapper = wrapper.find('Tab');
+        expect(wrapper.find('Tab').length).toBe(2);
+        console.log(wrapper.find('.tab-content-container'));
+        expect(tabWrapper.at(0).props().children.props.children).toBe('Some Content');
+        expect(tabWrapper.at(1).props().children.props.children).toBe('Some more Content');
     });
+
 });

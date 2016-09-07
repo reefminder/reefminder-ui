@@ -9,7 +9,7 @@ export default class Tab extends React.Component {
         return <div className="tab-container">
             <div className={ this.props.isActive ? (this.props.color ? "tab active-" + this.props.color : "tab active-default") : "tab" } onClick={ this.props.tabClick.bind(this) }>
                 <Avatar theme={ avatarTheme } image="https://placeimg.com/80/80/animals" />
-                <span className="tab-title-text"> { " " + this.props.title } </span>
+                <span className="tab-title-text"> { this.props.title } </span>
             </div>
         </div>;
     };
