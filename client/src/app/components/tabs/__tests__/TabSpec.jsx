@@ -1,5 +1,3 @@
-jest.unmock('../Tab');
-
 import React from 'React';
 import { mount } from 'enzyme';
 import Tab from '../Tab.jsx';

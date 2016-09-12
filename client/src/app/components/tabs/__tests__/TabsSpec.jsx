@@ -1,5 +1,3 @@
-jest.unmock('../Tabs');
-
 import React from 'react';
 import Tabs from '../Tabs.jsx';
 import Tab from '../Tab.jsx';
@@ -30,7 +28,6 @@ describe('Tabs', () => {
         </Tabs>);
         const tabWrapper = wrapper.find('Tab');
         expect(wrapper.find('Tab').length).toBe(2);
-        console.log(wrapper.find('.tab-content-container'));
         expect(tabWrapper.at(0).props().children.props.children).toBe('Some Content');
         expect(tabWrapper.at(1).props().children.props.children).toBe('Some more Content');
     });

@@ -1,5 +1,3 @@
-jest.unmock('../TabContent.jsx');
-
 import React from 'React';
 import {shallow} from 'enzyme';
 import TabContent from '../TabContent.jsx';

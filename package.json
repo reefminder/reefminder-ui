@@ -76,23 +76,13 @@
     "start": "webpack-dev-server --config webpack.config.wds.js --progress --colors --hot --inline"
   },
   "jest": {
-    "testPathDirs": ["client/"],
-    "testFileExtensions": [
-      "js",
-      "jsx"
-    ],
     "moduleFileExtensions": [
       "js",
       "jsx",
-      "json",
-      "scss"
+      "json"
     ],
-    "preprocessorIgnorePatterns": [],
-    "unmockedModulePathPatterns": [
-      "<rootDir>/node_modules",
-      "<rootDir>/src/__test_utils__",
-      ".\\.json$"
-    ],
-    "scriptPreprocessor": "<rootDir>/preprocessor.js"
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "preprocessorIgnorePatterns" : ["node_modules", "__test_utils__"],
+    "testRegex": "(/__tests__/.*|\\.Spec)\\.(js|jsx|json)$"
   }
 }

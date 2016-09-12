@@ -1,8 +1,6 @@
 /**
  * Created by dbinh on 02/06/2016.
  */
-jest.unmock('../performFetch.js');
-
 import performFetch, { DEFAULT_OPTS } from '../performFetch';
 import PromiseUtils from '../../__test_utils__/PromiseUtils.js';
 
