@@ -11,7 +11,7 @@ const precss = require('precss');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
-    context: path.join(__dirname, 'client', 'src'),
+    context: path.join(__dirname, 'src'),
     entry: [
         './reefminder.jsx'
     ],
@@ -48,7 +48,7 @@ const config = {
     postcss: [autoprefixer, precss],
     resolve: {
         root: [
-            path.join(__dirname, 'client', 'src')
+            path.join(__dirname, 'src')
         ],
         extensions: ['', '.js', '.jsx', '.scss', '.css'],
         modulesDirectories: [
@@ -61,7 +61,7 @@ const config = {
         publicPath: '/'
     },
     toolbox: {
-        theme: 'style/theme/theme.scss'
+        theme: 'src/style/theme/theme.scss'
     },
     plugins: [
         new ExtractTextPlugin('bundle.css', { allChunks: true })

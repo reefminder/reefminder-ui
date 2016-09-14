@@ -3,7 +3,7 @@ import thunk from 'redux-thunk';
 import createSagaMiddleware from 'redux-saga';
 
 import rootReducer from './reducers';
-import sagas from '../../app/sagas/sagas.js';
+import sagas from '../saga/sagas.js';
 
 const banner = '\n' +
     '    _/_/_/                         _/_/ _/      _/ _/                _/                  ' + '\n' +

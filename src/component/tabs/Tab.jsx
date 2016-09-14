@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Avatar from '../../../../../node_modules/react-toolbox/lib/avatar/Avatar';
-import avatarTheme from '../../../../style/theme/avatar.scss';
+import Avatar from '../../../node_modules/react-toolbox/lib/avatar/Avatar';
+import avatarTheme from '../../style/theme/avatar.scss';
 
 export default class Tab extends React.Component {
 

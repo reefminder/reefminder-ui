@@ -42,6 +42,7 @@
     "react-hot-loader": "^1.3.0",
     "resolve-url-loader": "^1.4.3",
     "sass-lint": "^1.7.0",
+    "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "teaspoon": "^6.3.0",
     "toolbox-loader": "0.0.3",
@@ -82,7 +83,10 @@
       "json"
     ],
     "scriptPreprocessor": "<rootDir>/preprocessor.js",
-    "preprocessorIgnorePatterns" : ["node_modules", "__test_utils__"],
+    "preprocessorIgnorePatterns": [
+      "node_modules",
+      "__test_utils__"
+    ],
     "testRegex": "(/__tests__/.*|\\.Spec)\\.(js|jsx|json)$"
   }
 }

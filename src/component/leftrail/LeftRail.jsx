@@ -1,5 +1,5 @@
 import React from 'react';
-import placeholderImg from '../../../../assets/reefminder-logo.png';
+import placeholderImg from '../../../assets/reefminder-logo.png';
 
 export default class Layout extends React.Component {
     render() {
