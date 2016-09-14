@@ -10,7 +10,7 @@ export const mapStateToProps = state => {
 };
 
 @connect(mapStateToProps)
-export default class Home extends React.Component {
+export default class Video extends React.Component {
 
     componentDidMount() {
         //this.props.dispatch(...);

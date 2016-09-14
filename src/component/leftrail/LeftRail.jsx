@@ -1,7 +1,18 @@
 import React from 'react';
 import placeholderImg from '../../../assets/reefminder-logo.png';
+import { push } from '../../routing/history';
 
-export default class Layout extends React.Component {
+export default class LeftRail extends React.Component {
+
+    constructor(props){
+        super(props);
+        this.onClick.bind(this);
+    }
+
+    onClick() {
+        push('/reefminder/video');
+    }
+
     render() {
         return (
             <div className="rail-container">
@@ -20,7 +31,7 @@ export default class Layout extends React.Component {
                     This is a link
                 </div>
                 <div className="rail-divide"/>
-                <div className="rail-link">
+                <div className="rail-link" onClick={ this.onClick }>
                     This is another link
                 </div>
                 <div className="rail-info">
