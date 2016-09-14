@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import StatusTabs from './StatusTabs.jsx';
-import Card from '../components/card/Card.jsx'
+import Card from '../../components/card/Card.jsx'
 
 export const mapStateToProps = state => {
     return {

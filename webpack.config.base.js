@@ -61,7 +61,7 @@ const config = {
         publicPath: '/'
     },
     toolbox: {
-        theme: 'client/style/theme/theme.scss'
+        theme: 'style/theme/theme.scss'
     },
     plugins: [
         new ExtractTextPlugin('bundle.css', { allChunks: true })

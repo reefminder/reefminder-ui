@@ -1,9 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import '../style/reefminder.scss';
-import configureStore from './app/containers/configureStore';
-import Root from './app/containers/Root';
+import 'style/reefminder.scss';
+import configureStore from 'container/configureStore';
+import Root from 'container/Root';
 
 const store = configureStore();
 

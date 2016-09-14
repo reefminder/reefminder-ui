@@ -1,8 +1,8 @@
 import React from 'react';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux';
-import Layout from '../components/layout/Layout.jsx'
-import Home from '../pages/Home.jsx'
+import Layout from '../component/layout/Layout.jsx'
+import Home from '../page/Home.jsx'
 
 export default class AppContainer extends React.Component {
     render() {

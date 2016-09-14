@@ -1,5 +1,5 @@
 import {takeEvery} from "redux-saga";
-import {call, put} from "redux-saga/effects";
+import {call, put} from "../../../node_modules/redux-saga/effects";
 import {STATUS_RETRIEVAL_INITIATED, STATUS_REQUEST, STATUS_RESPONSE} from "./actions.js";
 
 export default function* sagas() {

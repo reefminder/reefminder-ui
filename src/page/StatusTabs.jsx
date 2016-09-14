@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Tabs from '../components/tabs/Tabs.jsx';
-import Tab from '../components/tabs/Tab.jsx';
-import TabContent from '../components/tabs/TabContent.jsx';
-import TemperatureCard from '../components/card/TemperatureCard.jsx'
+import Tabs from '../../components/tabs/Tabs.jsx';
+import Tab from '../../components/tabs/Tab.jsx';
+import TabContent from '../../components/tabs/TabContent.jsx';
+import TemperatureCard from '../../components/card/TemperatureCard.jsx'
 
 export const mapStateToProps = state => {
     return {

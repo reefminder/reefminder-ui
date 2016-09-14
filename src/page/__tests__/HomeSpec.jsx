@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 
-import Header from '../../components/header/Header.jsx'
+import Header from '../../../components/header/Header.jsx'
 
 var Home = require('../Home').default.WrappedComponent;
 
