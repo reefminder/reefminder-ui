@@ -1,7 +1,5 @@
-/**
- * Created by dbinh on 02/06/2016.
- */
-import performFetch, { DEFAULT_OPTS } from '../performFetch';
+/* eslint-disable no-restricted-globals */
+import performFetch, { DEFAULT_OPTS } from '../doFetch';
 import PromiseUtils from '../../__test_utils__/PromiseUtils.js';
 
 describe('performFetch', () => {

@@ -2,13 +2,15 @@
   "parser": "babel-eslint",
   "env": {
     "browser": 1,
-    "jasmine": 1,
-    "protractor": 1
+    "jasmine": 1
   },
   "plugins": [
     "eslint-plugin-react"
   ],
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "parserOptions": {
     "ecmaVersion": 7,
     "sourceType": "module",

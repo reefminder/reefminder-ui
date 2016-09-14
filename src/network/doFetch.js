@@ -16,11 +16,11 @@ export default (path, options) =>
         opts.body = JSON.stringify(opts.body);
     }
 
-    return new Promise((resolve, reject) => {
+/*    return new Promise((resolve, reject) => {
         fetch(path, opts).then(function (response) {
             return response;
         }).catch(function (err) {
             // Error :(
         });
-    });
-}
+    });*/
+};
