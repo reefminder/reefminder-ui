@@ -1,0 +1,17 @@
+@import "reefminder-colors";
+
+.quickview-title {
+  font-weight: bold;
+}
+
+.quickview-divider {
+  height: 0.5rem;
+  border-bottom: 0.1rem solid $rm-color-orange;
+  margin-bottom: 1rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.quickview-content {
+  color: $rm-color-text-dark;
+}

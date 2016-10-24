@@ -1,12 +1,58 @@
+@import "reefminder-colors";
+@import "reefminder-properties";
+
 .card {
-  width: 20rem;
-  background-color: #ffffff;
-  box-shadow: 1px 1px 5px 1px #e1e1e1;
-  padding: 1rem;
+  background-color: $rm-color-dark;
+  opacity: 0.9;
+  margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 54rem) {
-  .card {
-    width: 60rem;
+.card-content {
+  padding: 0.5rem;
+}
+
+.content-row .size-small {
+  width: 15.5rem;
+}
+
+.content-row .size-medium {
+  width: 32rem;
+}
+
+.content-row .size-large {
+  width: 48.5rem;
+}
+
+@media only screen and (min-width: $rm-responsive-medium) and (max-width: $rm-responsive-large) {
+  .content-row .size-small {
+    width: 18rem;
   }
+  .content-row .size-medium {
+    width: 27rem;
+  }
+  .content-row .size-large {
+    width: 55rem;
+  }
+}
+
+@media only screen and (min-width: $rm-responsive-small) and (max-width: $rm-responsive-medium) {
+  .content-row .size-small {
+    width: 17.5rem;
+  }
+  .content-row .size-medium {
+    width: 36rem;
+  }
+  .content-row .size-large {
+    width: 55rem;
+  }
+}
+
+@media only screen and (max-width: $rm-responsive-small) {
+  .content-row .card {
+    width: 20rem;
+  }
+}
+
+.content-column .card {
+  width: 100%;
 }

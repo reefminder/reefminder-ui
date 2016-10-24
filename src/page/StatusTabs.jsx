@@ -21,18 +21,18 @@ export default class StatusTabs extends React.Component {
     render() {
         return (<div>
             <Tabs>
-                <Tab title="Temperature" color="red">
-                    <TabContent color="red">
+                <Tab title="Temperature" color="orange">
+                    <TabContent>
                         <TemperatureCard />
                     </TabContent>
                 </Tab>
-                <Tab title="Dissolved Oxygen" color="blue">
-                    <TabContent color="blue">
+                <Tab title="Dissolved Oxygen" color="orange">
+                    <TabContent>
                         Some more tab content
                     </TabContent>
                 </Tab>
-                <Tab title="Water Level" color="green">
-                    <TabContent color="green">
+                <Tab title="Water Level" color="orange">
+                    <TabContent>
                         Some more more tab content
                     </TabContent>
                 </Tab>

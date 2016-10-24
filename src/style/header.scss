@@ -1,0 +1,64 @@
+@import "reefminder-colors";
+
+.header-container {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  height: 8rem;
+  background-color: $rm-color-darker;
+  box-shadow: none;
+  padding: 0.5rem;
+  transform: skewY(-0.4deg);
+  margin-top: -12rem;
+}
+
+.header-inset {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 900;
+  height: 8rem;
+  background-color: white;
+  box-shadow: none;
+  padding: 0.5rem;
+  transform: skewY(-0.1deg);
+  margin-top: -11rem;
+}
+
+.header-logo {
+  margin-left: 1rem;
+  margin-top: 5.5rem;
+  width: 10rem;
+  width: 10rem;
+}
+
+.header-avatar {
+  margin-top: 6rem;
+  float: right;
+}
+
+.link {
+  margin-top: 6rem;
+  float: right;
+  position: relative;
+  width: 100px;
+  height: 45px;
+  background-color: $rm-color-orange-darker;
+}
+
+.link:nth-child(2) {
+  background-color: $rm-color-orange-dark;
+}
+
+.link:nth-child(3) {
+  background-color: $rm-color-orange;
+}
+
+.link-text {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  font-weight: bold;
+  color: white;
+}

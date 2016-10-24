@@ -1,3 +1,5 @@
+@import "reefminder-colors";
+
 .tabs-container {
   display: flex;
 
@@ -14,15 +16,11 @@
     }
 
     .tab {
-      background-color: $rm-color-dark;
+      background-color: $rm-color-darker;
       width: 2.2rem;
       margin-right: 0.2rem;
       margin-bottom: 0.2rem;
       padding: 0.5rem;
-      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-      font-size: 1rem;
-      color: white;
-
     }
 
     .active-default {
@@ -41,6 +39,10 @@
       background-color: #5CB85C;
     }
 
+    .active-orange {
+      background-color: $rm-color-orange;
+    }
+
     @media only screen and (min-width: 54rem) {
       .tab {
         width: 11rem;
@@ -56,6 +58,7 @@
 
 .tab-content-container {
   margin: auto;
+  padding: 1rem;
 
   .tab-content-default {
     background-color: transparent;
@@ -71,5 +74,9 @@
 
   .tab-content-green {
     background-color: #8AD38A;
+  }
+
+  .tab-content-orange {
+    background-color: $rm-color-orange;
   }
 }
